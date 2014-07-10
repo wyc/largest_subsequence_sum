@@ -1,0 +1,27 @@
+Contiguous Subset with Largest Sum Solution
+-------------------------------------------
+
+This problem can be solved with dynamic programming. The idea is to keep
+track of the current maximum subsequence while transversing the list of
+numbers once. This will result in a runtime of O(n) with constant memory as
+only the beginning/end indices and sum must be stored in memory.
+
+The program demonstrates a brute-force implementation and a dynamic programming
+one. If there was more time, it would have been nice to benchmark performance
+and have a nice little gnuplot comparing the two curves.
+
+Files:
+lss_bf.c - Brute-Force O(n^2) implementation with constant memory
+lss_dp.c - Dynamic Programming O(n) implementation with constant memory
+lss_test.c - Test cases
+lss.h - Function headers and macros
+
+Compiling:
+make
+
+Running:
+./lss_test
+
+There should be no output, as this means that the functions have passed all
+the test cases.
+
